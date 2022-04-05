@@ -1,0 +1,79 @@
+#================== Index ===================
+bind index l display-message
+
+#================== Pager ===================
+set pager_format = "%C %[%y/%m/%d|%H:%M:%S] %.20v, %s%* %?H? [%H] ?"
+bind pager j next-line
+bind pager k previous-line
+bind pager h exit
+bind pager l view-attachments
+
+#================= Sidebar ==================
+set sidebar_visible = yes
+set sidebar_width = 15
+set sidebar_delim_chars = '/.'
+set sidebar_folder_indent = no
+set sidebar_indent_string = '	'
+set sidebar_new_mail_only = no
+set sidebar_next_new_wrap = no
+set sidebar_divider_char = ' '
+set mail_check_stats
+set sidebar_format = '%B%?F? [%F]?%* %?N?%N/?%S'
+set sidebar_short_path = yes
+set sidebar_sort_method = 'unsorted'
+bind index,pager \Cj sidebar-next
+bind index,pager \Ck sidebar-prev
+bind index,pager \Cl sidebar-open
+
+#=================== IMAP ===================
+set imap_user = '\<youremailaddress\>'
+set imap_pass = `pass show \<youremailaddress\>`
+set folder = imaps://\<yourimapaddress\>
+set spoolfile = $folder/INBOX
+set record = $folder/outbox
+set postponed = $folder/draft
+set trash = $folder/trash 
+mailboxes =INBOX =outbox =draft =trash 
+
+#=================== SMTP ===================
+set smtp_url = ""
+set smtp_pass = $imap_pass
+set ssl_force_tls = yes	# requires encrypted connection
+set ssl_starttls = yes
+set ssl_use_sslv2 = no
+set ssl_use_sslv3 = no
+set ssl_use_tlsv1 = no
+set ssl_use_tlsv1_1 = no
+set ssl_use_tlsv1_2 = yes
+set ssl_verify_dates = yes
+set ssl_verify_host = yes
+
+#=============== Composition ================
+set editor="vim"
+set send_charset="us-ascii:utf-8"
+set editor = `echo \$EDITOR`
+set edit_headers = yes	# see the headers when editing
+set charset = UTF-8	# value of $LANG ; also fallback for send_charset
+# Sender, email address, sign-off line MUST MATCH
+unset use_domain	# Becauser joe@localhost is just embarassing
+set realname = "\<yourname\>"
+set from = "\<yourname\> <youremailaddress>"
+set sendmail="/usr/bin/esmtp"
+set envelope_from=yes
+set edit_headers=yes
+set use_from = yes
+
+#================= Ignore header =====================
+ignore *
+unignore date from subject to cc
+hdr_order From Date: From: To: Cc: Subject:
+
+#================== Appearance =====================
+set sort = reverse-date
+set menu_scroll = yes
+set index_format = "%C %S %[%y/%m/%d|%H:%M:%S] %f %s"	
+color indicator white blue
+color status black blue
+#color sidebar_indicator blue black 
+color sidebar_highlight white blue
+color sidebar_divider blue blue 
