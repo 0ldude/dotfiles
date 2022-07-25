@@ -1,0 +1,104 @@
+*.background: #1D2021
+! medium contrast: *background: #282828
+! soft contrast: *background: #32302F
+*.foreground: #FBF1C7
+! Black + DarkGrey
+*color0:  #1D2021
+*color8:  #928374
+! DarkRed + Red
+*color1:  #CC241D
+*color9:  #FB4934
+! DarkGreen + Green
+*color2:  #98971A
+*color10: #B8BB26
+! DarkYellow + Yellow
+*color3:  #D79921
+*color11: #FABD2F
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83A598
+! DarkMagenta + Magenta
+*color5:  #B16286
+*color13: #D3869B
+! DarkCyan + Cyan
+*color6:  #689D6A
+*color14: #8EC07C
+! LightGrey + White
+*color7:  #A89984
+*color15: #FBF1C7
+
+! dwm, st
+*.normfgcolor: #FBF1C7
+*.normbgcolor: #1D2021
+*.normbordercolor: #EBDBB2
+*.normfloatcolor: #EBDBB2
+
+*.selfgcolor: #FBF1C7
+*.selbgcolor: #458588
+*.selbordercolor: #458588
+*.selfloatcolor: #458588
+
+! dwm specific
+dwm.titlenormfgcolor: #FBF1C7
+dwm.titlenormbgcolor: #1D2021
+dwm.titlenormbordercolor: #EBDBB2
+dwm.titlenormfloatcolor: #EBDBB2
+
+dwm.titleselfgcolor: #FBF1C7
+dwm.titleselbgcolor: #1D2021
+dwm.titleselbordercolor: #458588
+dwm.titleselfloatcolor: #458588
+
+dwm.tagsnormfgcolor: #FBF1C7
+dwm.tagsnormbgcolor: #282828
+dwm.tagsnormbordercolor: #EBDBB2
+dwm.tagsnormfloatcolor: #EBDBB2
+
+dwm.tagsselfgcolor: #FBF1C7
+dwm.tagsselbgcolor: #458588
+dwm.tagsselbordercolor: #458588
+dwm.tagsselfloatcolor: #458588
+
+dwm.hidnormfgcolor: #FBF1C7
+dwm.hidnormbgcolor: #282828
+dwm.hidselfgcolor: #FBF1C7
+dwm.hidselbgcolor: #458588
+
+dwm.urgfgcolor: #FBF1C7
+dwm.urgbgcolor: #CC241D
+dwm.urgbordercolor: #CC241D
+dwm.urgfloatcolor: #CC241D
+
+dwm.scratchnormfgcolor: #FBF1C7
+dwm.scratchnormbgcolor: #1D2021
+dwm.scratchnormbordercolor: #EBDBB2
+dwm.scratchnormfloatcolor: #282828
+
+dwm.scratchselfgcolor: #FBF1C7
+dwm.scratchselbgcolor: #458588
+dwm.scratchselbordercolor: #B16286
+dwm.scratchselfloatcolor: #B16286
+
+! dmenu, sxiv
+*.font: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
+*.background: #1D2021
+*.foreground: #FBF1C7
+*.selbackground: #458588
+*.selforeground: #FBF1C7
+
+!dmenu specific
+dmenu.border: #EBDBB2
+dmenu.selborder: #458588
+dmenu.out: #458588
+
+! Xft
+Xft*antialias:  true
+Xft*hinting:    true
+Xft*rgba:       rgb
+Xft*autohint:   false
+Xft*hintstyle:  hintfull
+Xft*lcdfilter:  lcddefault
+
+! cursor
+Xcursor.background: #FBF1C7
+Xcursor.foreground: #1D2021

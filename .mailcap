@@ -1,0 +1,8 @@
+application/pdf; zathura %s;
+application/x-pdf; zathura %s;
+text/pdf; zathura %s;
+text/x-pdf; zathura %s;
+text/html; surf %s;
+image/webp; mpv %s;
+text/plain; vim %s;
+

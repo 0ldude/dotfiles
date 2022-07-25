@@ -1,0 +1,18 @@
+[Default Applications]
+application/pdf=zathura.desktop
+application/x-shellscript=nvim.desktop
+
+text/pdf=zathura.desktop
+text/html=surf.desktop
+text/x-log=nvim.desktop
+
+x-scheme-handler/http=surf.desktop
+x-scheme-handler/https=surf.desktop
+x-scheme-handler/about=surf.desktop
+x-scheme-handler/unknown=surf.desktop
+x-scheme-handler/url=surf.desktop
+
+inode/directory=pcmanfm.desktop
+
+image/jpeg=sxiv.desktop
+image/png=sxiv.desktop

@@ -1,0 +1,111 @@
+*.background: #FBF1C7
+! medium contrast: *background: #282828
+! soft contrast: *background: #32302f
+*.foreground: #1d2021
+! Black + DarkGrey
+*color0:  #1D2021
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #FBF1C7
+
+! dwm, st
+*.normfgcolor: #1D2021
+*.normbgcolor: #FBF1C7
+*.normbordercolor: #282828
+*.normfloatcolor: #282828
+
+*.selfgcolor: #1D2021
+*.selbgcolor: #458588
+*.selbordercolor: #458588
+*.selfloatcolor: #458588
+
+! dwm specific
+dwm.titlenormfgcolor: #1D2021
+dwm.titlenormbgcolor: #FBF1C7
+dwm.titlenormbordercolor: #282828
+dwm.titlenormfloatcolor: #282828
+
+dwm.titleselfgcolor: #1D2021
+dwm.titleselbgcolor: #FBF1C7
+dwm.titleselbordercolor: #458588
+dwm.titleselfloatcolor: #458588
+
+dwm.tagsnormfgcolor: #1D2021
+dwm.tagsnormbgcolor: #FBF1C7
+dwm.tagsnormbordercolor: #282828
+dwm.tagsnormfloatcolor: #282828
+
+dwm.tagsselfgcolor: #1D2021
+dwm.tagsselbgcolor: #458588
+dwm.tagsselbordercolor: #458588
+dwm.tagsselfloatcolor: #458588
+
+dwm.hidnormfgcolor: #1D2021
+dwm.hidnormbgcolor: #FBF1C7 
+dwm.hidselfgcolor: #1D2021
+dwm.hidselbgcolor: #458588
+
+dwm.urgfgcolor: #1D2021
+dwm.urgbgcolor: #CC241D
+dwm.urgbordercolor: #CC241D
+dwm.urgfloatcolor: #CC241D
+
+dwm.scratchnormfgcolor: #1D2021
+dwm.scratchnormbgcolor: #FBF1C7
+dwm.scratchnormbordercolor: #282828
+dwm.scratchnormfloatcolor: #282828
+
+dwm.scratchselfgcolor: #458588
+dwm.scratchselbgcolor: #FBF1C7
+dwm.scratchselbordercolor: #B16286
+dwm.scratchselfloatcolor: #B16286
+
+! st exclusive
+st.cursorColor: #D65D0E
+st.borderpx: 3
+
+! dmenu, sxiv, st
+*.font: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
+*.background: #FBF1C7
+*.foreground: #1D2021
+*.selbackground: #458588
+*.selforeground: #1D2021
+
+!dmenu specific
+dmenu.border: #282828
+dmenu.selborder: #458588
+
+! xmenu specific
+xmenu.border: #458588
+xmenu.borderWidth: 3
+
+! Xft
+Xft*antialias:  true
+Xft*hinting:    true
+Xft*rgba:       rgb
+Xft*autohint:   false
+Xft*hintstyle:  hintfull
+Xft*lcdfilter:  lcddefault
+
+! cursor
+Xcursor.background: #1D2021
+Xcursor.foreground: #FBF1C7
