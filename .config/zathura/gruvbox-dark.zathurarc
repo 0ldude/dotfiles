@@ -1,0 +1,35 @@
+#set sandbox strict
+set selection-clipboard clipboard
+
+set window-title-basename 1
+set statusbar-basename 1
+set adjust-open "width"
+set advance-pages-per-row true
+set highlight-active-color "#458588"
+set highlight-transparency 0.8
+set page-padding 0
+set pages-per-row 1
+set recolor true
+set recolor-keephue 1
+set recolor-darkcolor "#FBF1C7"
+set recolor-lightcolor "#1D2021"
+set scroll-step 40
+
+set n-completion-items 20
+set completion-bg "#1D2021"
+set completion-fg "#FBF1C7"
+set completion-group-fg "#FBF1C7"
+set completion-group-bg "#1D2021"
+set completion-highlight-bg "#458588"
+set completion-highlight-fg "#FBF1C7"
+set default-fg "#FBF1C7"
+set default-bg "#1D2021"
+set font "TerminessTTF Nerd Font Mono 14"
+set inputbar-bg "#458588"
+set inputbar-fg "#FBF1C7"
+set notification-error-bg "#CC241D"
+set notification-error-fg "#FBF1C7"
+set notification-warning-bg "#D79921"
+set notification-warning-fg "#FBF1C7"
+set statusbar-bg "#458588"
+set statusbar-fg "#FBF1C7"
