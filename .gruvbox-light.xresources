@@ -83,7 +83,7 @@ dwm.scratchselfloatcolor: #B16286
 st.cursorColor: #D65D0E
 st.borderpx: 3
 
-! dmenu, sxiv, st
+! dmenu, sxiv, st, slock
 *.font: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
 *.background: #FBF1C7
 *.foreground: #1D2021
@@ -93,6 +93,16 @@ st.borderpx: 3
 !dmenu specific
 dmenu.border: #282828
 dmenu.selborder: #458588
+
+! slock specific
+slock.bg_image: ~/Pictures/1920x1080-light-archlinux2.png
+slock.locked: #EBDBB2
+slock.input: #EBDBB2
+slock.capslock: #458588
+slock.pamaut: #B16286
+slock.message: Suckless, software that sucks less.
+slock.text_color: #1D2021
+slock.font_name: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
 
 ! xmenu specific
 xmenu.border: #458588
