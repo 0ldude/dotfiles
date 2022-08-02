@@ -42,7 +42,7 @@ if [ 08 -lt "$TIME" ] && [ "$TIME" -lt 20 ]; then
 	cp .config/nvim/lua/colorschemes-config/gruvbox-light.lua .config/nvim/lua/colorschemes-config/gruvbox.lua
 	cp .surf/styles/gruvbox-light.css .surf/styles/default.css
 	cp .config/mpv/gruvbox-light-mpv.conf .config/mpv/mpv.conf
-	cp .config/mpv/scripts/gruvbox-light-osc.lua .config/mpv/scripts/osc.conf
+	cp .config/mpv/scripts/gruvbox-light-osc.lua .config/mpv/scripts/osc.lua
 	export GTK_THEME=oomox-flat_gruvbox_light
 else
 	xrdb -load ~/.gruvbox-dark.xresources
