@@ -119,20 +119,20 @@
 
 [urgency_low]
     default_icon = /home/$(whoami)/.icons/nerd-fonts-symbols/bell_SymbolsNerdFontComplete-1000-em.svg
-    background = "#FBF1C7"
+    background = "#F9F5D7"
     foreground = "#1D2021"
     frame_color = "#1D2021"
     timeout = 10
 
 [urgency_normal]
-    background = "#FBF1C7"
+    background = "#F9F5D7"
     foreground = "#1d2021"
     frame_color = "#D79921"
     timeout = 10
     default_icon = /home/$(whoami)/.icons/nerd-fonts-symbols/bell-outline_SymbolsNerdFontComplete-1000-em.svg
 
 [urgency_critical]
-    background = "#FBF1C7"
+    background = "#F9F5D7"
     foreground = "#1D2021"
     frame_color = "#CC241D"
     timeout = 0
