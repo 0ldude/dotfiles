@@ -1,0 +1,6 @@
+[Unit]
+Description=mailsync
+
+[Service]
+ExecStart=/usr/bin/mailsync
+

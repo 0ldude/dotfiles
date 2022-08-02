@@ -1,0 +1,11 @@
+[Unit]
+Description=Timer to sync emails
+
+[Timer]
+OnActiveSec=10min
+OnUnitActiveSec=10min
+Unit=mailsync.service
+
+[Install]
+WantedBy=timers.target
+

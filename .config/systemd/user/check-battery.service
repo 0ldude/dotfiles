@@ -1,0 +1,6 @@
+[Unit]
+Description=check-battery
+
+[Service]
+ExecStart=/home/$(whoami)/.config/systemd/user/check-battery.sh
+
