@@ -39,11 +39,11 @@ if [ 08 -lt "$TIME" ] && [ "$TIME" -lt 20 ]; then
 	cp .config/gtk-3.0/gruvbox-light-settings.ini .config/gtk-3.0/settings.ini
 	cp .config/xournalpp/gruvbox-light-settings.xml .config/xournalpp/settings.xml
 	cp .config/bat/gruvbox-light.config .config/bat/config
-	cp .config/nvim/lua/colorschemes-config/gruvbox-light.config .config/nvim/lua/colorschemes-config/gruvbox.lua
+	cp .config/nvim/lua/colorschemes-config/gruvbox-light.lua .config/nvim/lua/colorschemes-config/gruvbox.lua
 	cp .surf/styles/gruvbox-light.css .surf/styles/default.css
 	cp .config/mpv/gruvbox-light-mpv.conf .config/mpv/mpv.conf
 	cp .config/mpv/scripts/gruvbox-light-osc.lua .config/mpv/scripts/osc.conf
-	GTK_THEME=oomox-flat_gruvbox_light
+	export GTK_THEME=oomox-flat_gruvbox_light
 else
 	xrdb -load ~/.gruvbox-dark.xresources
 	feh --bg-fill ~/Pictures/gruv-dark-arch-1080p.png
@@ -56,10 +56,10 @@ else
 	cp .config/xournalpp/gruvbox-dark-settings.xml .config/xournalpp/settings.xml
 	cp .config/bat/gruvbox-dark.config .config/bat/config
 	cp .surf/styles/gruvbox-dark.css .surf/styles/default.css
-	cp .config/nvim/lua/colorschemes-config/gruvbox-dark.config .config/nvim/lua/colorschemes-config/gruvbox.lua
+	cp .config/nvim/lua/colorschemes-config/gruvbox-dark.lua .config/nvim/lua/colorschemes-config/gruvbox.lua
 	cp .config/mpv/gruvbox-dark-mpv.conf .config/mpv/mpv.conf
 	cp .config/mpv/scripts/gruvbox-dark-osc.lua .config/mpv/scripts/osc.lua
-	GTK_THEME=oomox-flat_gruvbox_dark
+	export GTK_THEME=oomox-flat_gruvbox_dark
 fi
 
 xgamma -gamma 1.3
