@@ -15,12 +15,8 @@ set signcolumn=no
 set autoindent
 set paste
 
-colorscheme gruvbox
-"let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_contrast_light = 'hard'
-"set background=dark
 set background=light
-"let g:airline_theme='base16_gruvbox_dark_hard'
 let g:airline_theme='base16_gruvbox_light_hard'
 
 "inoremap [] <Esc>
