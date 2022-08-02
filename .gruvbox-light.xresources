@@ -1,7 +1,13 @@
-*.background: #FBF1C7
-! medium contrast: *background: #282828
-! soft contrast: *background: #32302f
+*.background: #F9F5D7
+*.bg: #F9F5D7
+! medium contrast:
+! *background: #FBF1C7
+! *bg: #FBF1C7
+! soft contrast
+! *background: #EBDBB2
+! *bg: #EBDBB2
 *.foreground: #1d2021
+*.fg: #1d2021
 ! Black + DarkGrey
 *color0:  #1D2021
 *color8:  #928374
@@ -27,9 +33,12 @@
 *color7:  #a89984
 *color15: #FBF1C7
 
+*.font: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
+*.fn: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
+
 ! dwm, st
 *.normfgcolor: #1D2021
-*.normbgcolor: #FBF1C7
+*.normbgcolor: #F9F5D7
 *.normbordercolor: #282828
 *.normfloatcolor: #282828
 
@@ -38,19 +47,23 @@
 *.selbordercolor: #458588
 *.selfloatcolor: #458588
 
+! dmenu, sxiv, st, slock
+*.selbackground: #458588
+*.selforeground: #1D2021
+
 ! dwm specific
 dwm.titlenormfgcolor: #1D2021
-dwm.titlenormbgcolor: #FBF1C7
+dwm.titlenormbgcolor: #F9F5D7
 dwm.titlenormbordercolor: #282828
 dwm.titlenormfloatcolor: #282828
 
 dwm.titleselfgcolor: #1D2021
-dwm.titleselbgcolor: #FBF1C7
+dwm.titleselbgcolor: #F9F5D7
 dwm.titleselbordercolor: #458588
 dwm.titleselfloatcolor: #458588
 
 dwm.tagsnormfgcolor: #1D2021
-dwm.tagsnormbgcolor: #FBF1C7
+dwm.tagsnormbgcolor: #F9F5D7
 dwm.tagsnormbordercolor: #282828
 dwm.tagsnormfloatcolor: #282828
 
@@ -60,7 +73,7 @@ dwm.tagsselbordercolor: #458588
 dwm.tagsselfloatcolor: #458588
 
 dwm.hidnormfgcolor: #1D2021
-dwm.hidnormbgcolor: #FBF1C7 
+dwm.hidnormbgcolor: #F9F5D7
 dwm.hidselfgcolor: #1D2021
 dwm.hidselbgcolor: #458588
 
@@ -70,32 +83,25 @@ dwm.urgbordercolor: #CC241D
 dwm.urgfloatcolor: #CC241D
 
 dwm.scratchnormfgcolor: #1D2021
-dwm.scratchnormbgcolor: #FBF1C7
+dwm.scratchnormbgcolor: #F9F5D7
 dwm.scratchnormbordercolor: #282828
 dwm.scratchnormfloatcolor: #282828
 
 dwm.scratchselfgcolor: #458588
-dwm.scratchselbgcolor: #FBF1C7
+dwm.scratchselbgcolor: #F9F5D7
 dwm.scratchselbordercolor: #B16286
 dwm.scratchselfloatcolor: #B16286
 
-! st exclusive
+! st
 st.cursorColor: #D65D0E
 st.borderpx: 3
 
-! dmenu, sxiv, st, slock
-*.font: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
-*.background: #FBF1C7
-*.foreground: #1D2021
-*.selbackground: #458588
-*.selforeground: #1D2021
-
-!dmenu specific
+!dmenu
 dmenu.border: #282828
 dmenu.selborder: #458588
 
-! slock specific
-slock.bg_image: ~/Pictures/1920x1080-light-archlinux2.png
+! slock
+slock.bg_image: /home/$(whoami)/Pictures/gruv-light-arch-1080p.png
 slock.locked: #EBDBB2
 slock.input: #EBDBB2
 slock.capslock: #458588
@@ -104,18 +110,14 @@ slock.message: Suckless, software that sucks less.
 slock.text_color: #1D2021
 slock.font_name: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
 
-! xmenu specific
+! xmenu
 xmenu.border: #458588
 xmenu.borderWidth: 3
 
 ! Xft
-Xft*antialias:  true
-Xft*hinting:    true
-Xft*rgba:       rgb
-Xft*autohint:   false
-Xft*hintstyle:  hintfull
-Xft*lcdfilter:  lcddefault
-
-! cursor
-Xcursor.background: #1D2021
-Xcursor.foreground: #FBF1C7
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.rgba:       rgb
+Xft.autohint:   false
+Xft.hintstyle:  hintfull
+Xft.lcdfilter:  lcddefault
