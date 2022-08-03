@@ -1,0 +1,10 @@
+[Unit]
+Description=Switch light/dark theme
+
+[Timer]
+OnCalendar=*-*-* *:00:00
+Persistent=true
+Unit=theme-switcher.service
+
+[Install]
+WantedBy=timers.target

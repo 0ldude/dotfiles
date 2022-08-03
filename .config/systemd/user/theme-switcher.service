@@ -1,0 +1,7 @@
+[Unit]
+Description=Theme switcher
+
+[Service]
+ExecStart=/home/$(whoami)/.config/systemd/user/theme-switcher.sh
+
+
