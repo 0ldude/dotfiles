@@ -2,21 +2,14 @@
 # keyboard settings for X
 setxkbmap -layout it -variant us -option ctrl:nocaps,compose:ralt
 
-# laptop below screen
-#xrandr --output LVDS-1\
-#--primary --mode 1280x800\
-#--pos 320x1080--rotate normal\
-#--output VGA-1 --mode 1920x1080\
-#--pos 0x0 --rotate normal\
-#--output DVI-D-1 --off
+## laptop below screen
+#xrandr --output LVDS-1 --primary --mode 1280x800 --pos 320x1080--rotate normal --output VGA-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DVI-D-1 --off
+
+## laptop to the left of the screen
+#xrandr --output LVDS-1 --primary --mode 1280x800 --pos 0x0 --rotate normal --output VGA-1 --mode 1920x1080 --pos 1280x0 --rotate normal --output DVI-D-1 --off
 
 # laptop to the right of the screen
-xrandr --output LVDS-1\
---primary --mode 1280x800\
---pos 1920x280 --rotate normal\
---output VGA-1 --mode 1920x1080\
---pos 0x0 --rotate normal\
---output DVI-D-1 --off
+xrandr --output LVDS-1 --primary --mode 1280x800 --pos 1920x280 --rotate normal --output VGA-1 --mode 1920x1060 --pos 0x0 --rotate normal --output DVI-D-1 --off
 
 # graphic tablet bind to laptop screen
 # xsetwacom set 12 MapToOutput LVDS-1
