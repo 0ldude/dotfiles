@@ -18,6 +18,8 @@ set paste
 let g:gruvbox_contrast_dark = 'hard'
 set background=dark
 let g:airline_theme='base16_gruvbox_dark_hard'
+hi ColorColumn ctermbg=darkgrey
+hi ColorColumn guibg=darkgrey
 
 "inoremap [] <Esc>
 "cnoremap [] <Esc>
