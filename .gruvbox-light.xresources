@@ -1,116 +1,109 @@
-*.background: #F9F5D7
-*.bg: #F9F5D7
-! medium contrast:
-! *background: #FBF1C7
-! *bg: #FBF1C7
-! soft contrast
-! *background: #EBDBB2
-! *bg: #EBDBB2
-*.foreground: #1d2021
-*.fg: #1d2021
+! hard contrast: *.background: #1D2021
+! medium contrast: *background: #282828
+! soft contrast: *background: #32302F
+! hard contrast: *.foreground: #FBF1C7
+! medium contrast: *background: #282828
+! soft contrast: *background: #32302F
+*.foreground: #1D2021
+*.background: #FBF1C7
+*font*: "TerminessTTF Nerd Font Mono:style=Medium"
+
 ! Black + DarkGrey
 *color0:  #1D2021
-*color8:  #928374
+*color8:  #282828
 ! DarkRed + Red
-*color1:  #cc241d
-*color9:  #fb4934
+*color1:  #CC241D
+*color9:  #FB4934
 ! DarkGreen + Green
-*color2:  #98971a
-*color10: #b8bb26
+*color2:  #98971A
+*color10: #B8BB26
 ! DarkYellow + Yellow
-*color3:  #d79921
-*color11: #fabd2f
+*color3:  #D79921
+*color11: #FABD2F
 ! DarkBlue + Blue
 *color4:  #458588
-*color12: #83a598
+*color12: #83A598
 ! DarkMagenta + Magenta
-*color5:  #b16286
-*color13: #d3869b
+*color5:  #B16286
+*color13: #D3869B
 ! DarkCyan + Cyan
-*color6:  #689d6a
-*color14: #8ec07c
+*color6:  #689D6A
+*color14: #8EC07C
 ! LightGrey + White
-*color7:  #a89984
+*color7:  #A89984
 *color15: #FBF1C7
-
-*.font: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
-*.fn: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
 
 ! dwm, st
 *.normfgcolor: #1D2021
-*.normbgcolor: #F9F5D7
-*.normbordercolor: #282828
-*.normfloatcolor: #282828
+*.normbgcolor: #FBF1C7
+*.normbordercolor: #EBDBB2
+*.normfloatcolor: #EBDBB2
 
 *.selfgcolor: #1D2021
 *.selbgcolor: #458588
 *.selbordercolor: #458588
 *.selfloatcolor: #458588
 
-! dmenu, sxiv, st, slock
-*.selbackground: #458588
-*.selforeground: #1D2021
-
 ! dwm specific
 dwm.titlenormfgcolor: #1D2021
-dwm.titlenormbgcolor: #F9F5D7
-dwm.titlenormbordercolor: #282828
-dwm.titlenormfloatcolor: #282828
+dwm.titlenormbgcolor: #FBF1C7
+dwm.titlenormbordercolor: #EBDBB2
+dwm.titlenormfloatcolor: #EBDBB2
 
 dwm.titleselfgcolor: #1D2021
-dwm.titleselbgcolor: #F9F5D7
+dwm.titleselbgcolor: #FBF1C7
 dwm.titleselbordercolor: #458588
 dwm.titleselfloatcolor: #458588
 
-dwm.tagsnormfgcolor: #1D2021
-dwm.tagsnormbgcolor: #F9F5D7
-dwm.tagsnormbordercolor: #282828
-dwm.tagsnormfloatcolor: #282828
+dwm.tagsnormfgcolor: #FBF1C7
+dwm.tagsnormbgcolor: #282828
+dwm.tagsnormbordercolor: #EBDBB2
+dwm.tagsnormfloatcolor: #EBDBB2
 
-dwm.tagsselfgcolor: #1D2021
+dwm.tagsselfgcolor: #FBF1C7
 dwm.tagsselbgcolor: #458588
 dwm.tagsselbordercolor: #458588
 dwm.tagsselfloatcolor: #458588
 
-dwm.hidnormfgcolor: #1D2021
-dwm.hidnormbgcolor: #F9F5D7
-dwm.hidselfgcolor: #1D2021
+dwm.hidnormfgcolor: #FBF1C7
+dwm.hidnormbgcolor: #282828
+dwm.hidselfgcolor: #FBF1C7
 dwm.hidselbgcolor: #458588
 
-dwm.urgfgcolor: #1D2021
+dwm.urgfgcolor: #FBF1C7
 dwm.urgbgcolor: #CC241D
 dwm.urgbordercolor: #CC241D
 dwm.urgfloatcolor: #CC241D
 
-dwm.scratchnormfgcolor: #1D2021
-dwm.scratchnormbgcolor: #F9F5D7
-dwm.scratchnormbordercolor: #282828
+dwm.scratchnormfgcolor: #FBF1C7
+dwm.scratchnormbgcolor: #1D2021
+dwm.scratchnormbordercolor: #EBDBB2
 dwm.scratchnormfloatcolor: #282828
 
-dwm.scratchselfgcolor: #458588
-dwm.scratchselbgcolor: #F9F5D7
+dwm.scratchselfgcolor: #FBF1C7
+dwm.scratchselbgcolor: #458588
 dwm.scratchselbordercolor: #B16286
 dwm.scratchselfloatcolor: #B16286
 
-! st
-st.cursorColor: #D65D0E
-st.borderpx: 3
-
-!dmenu
-dmenu.border: #282828
+! dmenu specific
+dmenu.normbordercolor: #458588
 dmenu.selborder: #458588
+dmenu.out: #458588
 
-! slock
-slock.background_image: "/home/$(whoami)/Pictures/gruv-light-arch-1080p.png"
-slock.locked: #EBDBB2
-slock.input: #EBDBB2
-slock.capslock: #458588
+! slock specific
+slock.locked: #458588
+slock.failed: #CC241D
+slock.background: #458588
+slock.input: #458588
+slock.capslock: #CC241D
 slock.pamaut: #B16286
-slock.message: "Suckless, software that sucks less."
-slock.text_color: #1D2021
+slock.message: Suckless, software that sucks less.
+slock.text_color: #458588
+slock.font_name: -xos4-terminesspowerline-medium-r-normal--14-140-72-72-c-80-iso10646-1 
 
-! xmenu
+! xmenu specific
 xmenu.border: #458588
+xmenu.selbackground: #458588
 xmenu.borderWidth: 3
 
 ! Xft
@@ -120,3 +113,7 @@ Xft.rgba:       rgb
 Xft.autohint:   false
 Xft.hintstyle:  hintfull
 Xft.lcdfilter:  lcddefault
+
+! cursor
+*.cursorColor: #FBF1C7
+Xcursor.foreground: #1D2021

@@ -6,6 +6,7 @@
 ! soft contrast: *background: #32302F
 *.foreground: #FBF1C7
 *.background: #1D2021
+*font*: TerminessTTF Nerd Font Mono:style=Medium
 
 ! Black + DarkGrey
 *color0:  #1D2021
@@ -84,11 +85,6 @@ dwm.scratchselbgcolor: #458588
 dwm.scratchselbordercolor: #B16286
 dwm.scratchselfloatcolor: #B16286
 
-! dmenu, sxiv, st, slock
-*font*: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
-*.selbackground: #458588
-*.selforeground: #FBF1C7
-
 ! dmenu specific
 dmenu.normbordercolor: #458588
 dmenu.selborder: #458588
@@ -101,13 +97,13 @@ slock.background: #458588
 slock.input: #458588
 slock.capslock: #CC241D
 slock.pamaut: #B16286
-slock.message: "Suckless, software that sucks less."
+slock.message: Suckless, software that sucks less.
 slock.text_color: #458588
-slock.font_name: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
+slock.font_name: -xos4-terminesspowerline-medium-r-normal--14-140-72-72-c-80-iso10646-1 
 
 ! xmenu specific
 xmenu.border: #458588
-xmenu.font: TerminessTTF Nerd Font:size=14:style=Medium:antialias=true:autohint=true
+xmenu.selbackground: #458588
 xmenu.borderWidth: 3
 
 ! Xft
