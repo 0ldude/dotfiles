@@ -6,7 +6,7 @@
 ! soft contrast: *background: #32302F
 *.foreground: #FBF1C7
 *.background: #1D2021
-*font*: TerminessTTF Nerd Font Mono:style=Medium
+*font*: "TerminessTTF Nerd Font Mono:style=Medium"
 
 ! Black + DarkGrey
 *color0:  #1D2021
@@ -30,21 +30,31 @@
 *color6:  #689D6A
 *color14: #8EC07C
 ! LightGrey + White
-*color7:  #A89984
+*color7:  #EBDBB2
 *color15: #FBF1C7
 
-! dwm, st
-*.normfgcolor: #FBF1C7
-*.normbgcolor: #1D2021
-*.normbordercolor: #EBDBB2
-*.normfloatcolor: #EBDBB2
+! st
+st.normfgcolor: #FBF1C7
+st.normbgcolor: #1D2021
+st.normbordercolor: #1D2021
+st.normfloatcolor: #EBDBB2
 
-*.selfgcolor: #FBF1C7
-*.selbgcolor: #458588
-*.selbordercolor: #458588
-*.selfloatcolor: #458588
+st.selfgcolor: #FBF1C7
+st.selbgcolor: #458588
+st.selbordercolor: #458588
+st.selfloatcolor: #458588
 
 ! dwm specific
+dwm.normfgcolor: #FBF1C7
+dwm.normbgcolor: #1D2021
+dwm.normbordercolor: #1D2021
+dwm.normfloatcolor: #458588
+
+dwm.selfgcolor: #FBF1C7
+dwm.selbgcolor: #458588
+dwm.selbordercolor: #458588
+dwm.selfloatcolor: #458588
+
 dwm.titlenormfgcolor: #FBF1C7
 dwm.titlenormbgcolor: #1D2021
 dwm.titlenormbordercolor: #EBDBB2
@@ -56,9 +66,9 @@ dwm.titleselbordercolor: #458588
 dwm.titleselfloatcolor: #458588
 
 dwm.tagsnormfgcolor: #FBF1C7
-dwm.tagsnormbgcolor: #282828
-dwm.tagsnormbordercolor: #EBDBB2
-dwm.tagsnormfloatcolor: #EBDBB2
+dwm.tagsnormbgcolor: #1D2021
+dwm.tagsnormbordercolor: #282828
+dwm.tagsnormfloatcolor: #282828
 
 dwm.tagsselfgcolor: #FBF1C7
 dwm.tagsselbgcolor: #458588
@@ -99,7 +109,7 @@ slock.capslock: #CC241D
 slock.pamaut: #B16286
 slock.message: Suckless, software that sucks less.
 slock.text_color: #458588
-slock.font_name: -xos4-terminesspowerline-medium-r-normal--14-140-72-72-c-80-iso10646-1 
+slock.font_name: -xos4-terminesspowerline-medium-r-normal--14-140-72-72-c-80-iso10646-1
 
 ! xmenu specific
 xmenu.border: #458588

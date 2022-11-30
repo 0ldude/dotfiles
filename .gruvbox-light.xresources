@@ -6,7 +6,7 @@
 ! soft contrast: *background: #32302F
 *.foreground: #1D2021
 *.background: #FBF1C7
-*font*: "TerminessTTF Nerd Font Mono:style=Medium"
+!*font*: "TerminessTTF Nerd Font Mono:style=Medium"
 
 ! Black + DarkGrey
 *color0:  #1D2021
@@ -30,10 +30,10 @@
 *color6:  #689D6A
 *color14: #8EC07C
 ! LightGrey + White
-*color7:  #A89984
+*color7:  #EBDBB2
 *color15: #FBF1C7
 
-! dwm, st
+! st
 *.normfgcolor: #1D2021
 *.normbgcolor: #FBF1C7
 *.normbordercolor: #EBDBB2
@@ -45,6 +45,16 @@
 *.selfloatcolor: #458588
 
 ! dwm specific
+dwm.normfgcolor: #1D2021
+dwm.normbgcolor: #FBF1C7
+dwm.normbordercolor: #FBF1C7
+dwm.normfloatcolor: #458588
+
+dwm.selfgcolor: #1D2021
+dwm.selbgcolor: #458588
+dwm.selbordercolor: #458588
+dwm.selfloatcolor: #458588
+
 dwm.titlenormfgcolor: #1D2021
 dwm.titlenormbgcolor: #FBF1C7
 dwm.titlenormbordercolor: #EBDBB2
@@ -75,6 +85,7 @@ dwm.urgbgcolor: #CC241D
 dwm.urgbordercolor: #CC241D
 dwm.urgfloatcolor: #CC241D
 
+! #if RENAMED_SCRATCHPADS_PATCH
 dwm.scratchnormfgcolor: #FBF1C7
 dwm.scratchnormbgcolor: #1D2021
 dwm.scratchnormbordercolor: #EBDBB2
@@ -84,11 +95,85 @@ dwm.scratchselfgcolor: #FBF1C7
 dwm.scratchselbgcolor: #458588
 dwm.scratchselbordercolor: #B16286
 dwm.scratchselfloatcolor: #B16286
+! #endif RENAMED_SCRATCHPADS_PATCH
+
+#if BAR_FLEXWINTITLE_PATCH
+dwm.normTTBbgcolor
+dwm.normLTRbgcolor
+dwm.normMONObgcolor
+dwm.normGRIDbgcolor
+dwm.normGRD1bgcolor
+dwm.normGRD2bgcolor
+dwm.normGRDMbgcolor
+dwm.normHGRDbgcolor
+dwm.normDWDLbgcolor
+dwm.normSPRLbgcolor
+dwm.normfloatbgcolor
+
+dwm.actTTBbgcolor
+dwm.actLTRbgcolor
+dwm.actMONObgcolor
+dwm.actGRIDbgcolor
+dwm.actGRD1bgcolor
+dwm.actGRD2bgcolor
+dwm.actGRDMbgcolor
+dwm.actHGRDbgcolor
+dwm.actDWDLbgcolor
+dwm.actSPRLbgcolor
+dwm.actfloatbgcolor
+
+dwm.selTTBbgcolor
+dwm.selLTRbgcolor
+dwm.selMONObgcolor
+dwm.selGRIDbgcolor
+dwm.selGRD1bgcolor
+dwm.selGRD2bgcolor
+dwm.selGRDMbgcolor
+dwm.selHGRDbgcolor
+dwm.selDWDLbgcolor
+dwm.selSPRLbgcolor
+dwm.selfloatbgcolor
+! #endif // BAR_FLEXWINTITLE_PATCH
 
 ! dmenu specific
-dmenu.normbordercolor: #458588
-dmenu.selborder: #458588
-dmenu.out: #458588
+!dmenu.font "TerminessTTF Nerd Font Mono:style=Medium"
+dmenu.background: #FBF1C7
+dmenu.foreground: #1D2021
+dmenu.selbackground: #458588
+dmenu.selforeground: #1D2021
+dmenu.outbackground: #FBF1C7
+dmenu.outforeground: #1D2021
+! #if MORECOLOR_PATCH
+dmenu.midbackground: #FBF1C7
+dmenu.midforeground: #1D2021
+! #endif MORECOLOR_PATCH
+! #if BORDER_PATCH
+dmenu.bordercolor: #458588
+! #endif BORDER_PATCH
+! #if HIGHLIGHT_PATCH || FUZZYHIGHLIGHT_PATCH
+dmenu.selhlbackground: #458588
+dmenu.selhlforeground: #1D2021
+dmenu.hlbackground: #458588
+dmenu.hlforeground: #1D2021
+! #endif HIGHLIGHT_PATCH || FUZZYHIGHLIGHT_PATCH
+! #if HIGHPRIORITY_PATCH
+dmenu.hpbackground: #458588
+dmenu.hpforeground: #1D2021
+! #endif HIGHPRIORITY_PATCH
+! #if EMOJI_HIGHLIGHT_PATCH
+dmenu.hoverbackground: #458588
+dmenu.hoverforeground: #1D2021
+dmenu.greenbackground: #98971A
+dmenu.greenforeground: #1D2021
+dmenu.yellowbackground: #D79921
+dmenu.yellowforeground: #1D2021
+dmenu.bluebackground: #458588
+dmenu.blueforeground: #1D2021
+dmenu.purplebackground: #B16286
+dmenu.purpleforeground: #1D2021
+dmenu.redbackground: #CC241D
+dmenu.redforeground: #1D2021
+! #endif EMOJI_HIGHLIGHT_PATCH
 
 ! slock specific
 slock.locked: #458588
@@ -99,7 +184,7 @@ slock.capslock: #CC241D
 slock.pamaut: #B16286
 slock.message: Suckless, software that sucks less.
 slock.text_color: #458588
-slock.font_name: -xos4-terminesspowerline-medium-r-normal--14-140-72-72-c-80-iso10646-1 
+slock.font_name: -xos4-terminesspowerline-medium-r-normal--14-140-72-72-c-80-iso10646-1
 
 ! xmenu specific
 xmenu.border: #458588
