@@ -1,18 +1,56 @@
-require('settings')
-require('packer-config')
-require('telescope').load_extension('media_files')
-require('colorschemes-config.gruvbox')
-require('nvim-tree-config')
-require('mappings')
-require('lsp-config.language-servers')
-require('lsp-config.clangd-config')
-require('nvim-cmp-config')
-require('nvim-treesitter-config')
-require('nvim-orgmode-config')
-require('nvim-org-bullets-config')
-require('nvim-zen-mode-config')
-require('nvim-neorg-config')
-require('nvim-barbar-config')
-require('nvim-lualine-config')
-require('nvim-notify-config')
+--[[ init.lua ]]
 
+-- IMPORTS
+-- from .config/nvim/lua/
+--
+-- autocommands
+require("autocmds")
+
+-- Variables
+require("variables")
+
+
+-- Plugins
+require("plugins")
+
+vim.cmd([[colorscheme gruvbox]])
+
+-- General and plugin-specific highlight-groups
+require("highlight-groups/nvim")
+require("highlight-groups/barbar")
+require("highlight-groups/nvim-notify")
+
+-- General and plugin-specific keymaps
+require("keymaps")
+require("keymaps/icon-picker")
+require("keymaps/nvim-tree")
+require("keymaps/telescope")
+
+-- General and plugin-specific options
+require("options")
+require("options/alpha-nvim")
+require("options/auto-save")
+require("options/barbar")
+require("options/cinnamon")
+require("options/Comment")
+require("options/fold-preview")
+require("options/gitsigns")
+require("options/gruvbox")
+require("options/icon-picker")
+require("options/indent-blankline")
+require("options/lualine")
+require("options/mason")
+require("options/neovim-session-manager")
+require("options/neorg")
+require("options/nvim-autopairs")
+require("options/nvim-cmp")
+require("options/nvim-colorizer")
+require("options/nvim-notify")
+require("options/nvim-tree")
+require("options/nvim-web-devicons")
+require("options/packer")
+require("options/scrollbar")
+require("options/telescope")
+require("options/tidy")
+require("options/trouble")
+require("options/true-zen")

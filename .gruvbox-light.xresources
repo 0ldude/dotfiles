@@ -30,7 +30,7 @@
 *color6:  #689D6A
 *color14: #8EC07C
 ! LightGrey + White
-*color7:  #EBDBB2
+*color7:  #282828
 *color15: #FBF1C7
 
 ! st
@@ -97,7 +97,7 @@ dwm.scratchselbordercolor: #B16286
 dwm.scratchselfloatcolor: #B16286
 ! #endif RENAMED_SCRATCHPADS_PATCH
 
-#if BAR_FLEXWINTITLE_PATCH
+! #if BAR_FLEXWINTITLE_PATCH
 dwm.normTTBbgcolor
 dwm.normLTRbgcolor
 dwm.normMONObgcolor
