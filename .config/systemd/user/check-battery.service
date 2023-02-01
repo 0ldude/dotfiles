@@ -2,5 +2,5 @@
 Description=check-battery
 
 [Service]
-ExecStart=/home/$(whoami)/.config/systemd/user/check-battery.sh
+ExecStart=/home/$USER/.config/systemd/user/check-battery.sh
 
