@@ -1,6 +1,7 @@
 #!/bin/sh
 # keyboard settings for X
 setxkbmap -layout it -variant us -option ctrl:nocaps,compose:ralt
+xcape -e 'Control_L=Escape'
 
 ## secondary screen above laptop
 #xrandr --output LVDS-1 --primary --rotate normal --output VGA-1 --above LVDS-1 --rotate normal --output DVI-D-1 --off
