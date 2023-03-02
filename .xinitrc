@@ -25,13 +25,14 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 # themes
 TIME=$(date +%H)
-if [ 07 -lt "$TIME" ] && [ "$TIME" -lt 21 ]; then
+if [ 07 -lt "$TIME" ] && [ "$TIME" -lt 17 ]; then
 	xrdb -load ~/.gruvbox-light.xresources
 	feh --bg-fill ~/Pictures/gruv-light-arch-1080p.png
 	cp .gruvbox-light.exrc .exrc
 	cp .config/dunst/gruvbox-light.dunstrc .config/dunst/dunstrc 
 	cp .config/zathura/gruvbox-light.zathurarc .config/zathura/zathurarc 
 	cp .config/qt5ct/oomox-flat_gruvbox_light-qt5ct.conf .config/qt5ct/qt5ct.conf
+	cp .config/qt6ct/oomox-flat_gruvbox_light-qt6ct.conf .config/qt6ct/qt6ct.conf
 	cp .gruvbox-light-gtkrc-2.0 .gtkrc-2.0
 	cp .config/gtk-3.0/gruvbox-light-settings.ini .config/gtk-3.0/settings.ini
 	cp .config/xournalpp/gruvbox-light-settings.xml .config/xournalpp/settings.xml
@@ -49,6 +50,7 @@ else
 	cp .config/dunst/gruvbox-dark.dunstrc .config/dunst/dunstrc 
 	cp .config/zathura/gruvbox-dark.zathurarc .config/zathura/zathurarc 
 	cp .config/qt5ct/oomox-flat_gruvbox_dark-qt5ct.conf .config/qt5ct/qt5ct.conf
+	cp .config/qt6ct/oomox-flat_gruvbox_dark-qt6ct.conf .config/qt6ct/qt6ct.conf
 	cp .gruvbox-dark-gtkrc-2.0 .gtkrc-2.0
 	cp .config/gtk-3.0/gruvbox-dark-settings.ini .config/gtk-3.0/settings.ini
 	cp .config/xournalpp/gruvbox-dark-settings.xml .config/xournalpp/settings.xml
@@ -67,4 +69,4 @@ xgamma -gamma 1.3
 slstatus &
 nm-applet &
 dunst &
-exec dwm
+export XDG_CURRENT_DESKTOP=dwm ; exec dwm
