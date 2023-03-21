@@ -1,7 +1,6 @@
 #!/bin/sh
 # keyboard settings for X
-setxkbmap -layout it -variant us -option ctrl:nocaps,compose:ralt
-xcape -e 'Control_L=Escape'
+setxkbmap -layout it -variant us -option ctrl:nocaps,compose:ralt; killall xcape 2>/dev/null ; xcape -e 'Control_L=Escape'
 
 ## secondary screen above laptop
 #xrandr --output LVDS-1 --primary --rotate normal --output VGA-1 --above LVDS-1 --rotate normal --output DVI-D-1 --off
@@ -15,9 +14,7 @@ xcape -e 'Control_L=Escape'
 # secondary screen to the left of the laptop
 xrandr --output LVDS-1 --primary  --rotate normal --output VGA-1 --left-of LVDS-1 --rotate normal --output DVI-D-1 --off
 
-# graphic tablet bind to laptop screen
-# xsetwacom set 12 MapToOutput LVDS-1
-
+# graphic tablet bind to laptop screen # xsetwacom set 12 MapToOutput LVDS-1
 # exports, various fix
 export _JAVA_AWT_WM_NONREPARENTING=1
 export AWT_TOOLKIT=MToolkit
