@@ -6,7 +6,6 @@
 ! soft contrast: *background: #32302F
 *.foreground: #FBF1C7
 *.background: #1D2021
-*font*: "TerminessTTF Nerd Font Mono:style=Medium"
 
 ! Black + DarkGrey
 *color0:  #1D2021
@@ -67,8 +66,8 @@ dwm.titleselfloatcolor: #458588
 
 dwm.tagsnormfgcolor: #FBF1C7
 dwm.tagsnormbgcolor: #1D2021
-dwm.tagsnormbordercolor: #282828
-dwm.tagsnormfloatcolor: #282828
+dwm.tagsnormbordercolor: #1D2021
+dwm.tagsnormfloatcolor: #1D2021
 
 dwm.tagsselfgcolor: #FBF1C7
 dwm.tagsselbgcolor: #458588

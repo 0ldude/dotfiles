@@ -6,7 +6,6 @@
 ! soft contrast: *background: #32302F
 *.foreground: #1D2021
 *.background: #FBF1C7
-!*font*: "TerminessTTF Nerd Font Mono:style=Medium"
 
 ! Black + DarkGrey
 *color0:  #1D2021
@@ -30,7 +29,7 @@
 *color6:  #689D6A
 *color14: #8EC07C
 ! LightGrey + White
-*color7:  #282828
+*color7:  #7C6F64
 *color15: #FBF1C7
 
 ! st
@@ -65,12 +64,12 @@ dwm.titleselbgcolor: #FBF1C7
 dwm.titleselbordercolor: #458588
 dwm.titleselfloatcolor: #458588
 
-dwm.tagsnormfgcolor: #FBF1C7
-dwm.tagsnormbgcolor: #282828
-dwm.tagsnormbordercolor: #EBDBB2
-dwm.tagsnormfloatcolor: #EBDBB2
+dwm.tagsnormfgcolor: #1D2021
+dwm.tagsnormbgcolor: #FBF1C7
+dwm.tagsnormbordercolor: #FBF1C7
+dwm.tagsnormfloatcolor: #FBF1C7
 
-dwm.tagsselfgcolor: #FBF1C7
+dwm.tagsselfgcolor: #1D2021
 dwm.tagsselbgcolor: #458588
 dwm.tagsselbordercolor: #458588
 dwm.tagsselfloatcolor: #458588
@@ -98,45 +97,44 @@ dwm.scratchselfloatcolor: #B16286
 ! #endif RENAMED_SCRATCHPADS_PATCH
 
 ! #if BAR_FLEXWINTITLE_PATCH
-dwm.normTTBbgcolor
-dwm.normLTRbgcolor
-dwm.normMONObgcolor
-dwm.normGRIDbgcolor
-dwm.normGRD1bgcolor
-dwm.normGRD2bgcolor
-dwm.normGRDMbgcolor
-dwm.normHGRDbgcolor
-dwm.normDWDLbgcolor
-dwm.normSPRLbgcolor
-dwm.normfloatbgcolor
+dwm.normTTBbgcolor:
+dwm.normLTRbgcolor:
+dwm.normMONObgcolor:
+dwm.normGRIDbgcolor:
+dwm.normGRD1bgcolor:
+dwm.normGRD2bgcolor:
+dwm.normGRDMbgcolor:
+dwm.normHGRDbgcolor:
+dwm.normDWDLbgcolor:
+dwm.normSPRLbgcolor:
+dwm.normfloatbgcolor:
 
-dwm.actTTBbgcolor
-dwm.actLTRbgcolor
-dwm.actMONObgcolor
-dwm.actGRIDbgcolor
-dwm.actGRD1bgcolor
-dwm.actGRD2bgcolor
-dwm.actGRDMbgcolor
-dwm.actHGRDbgcolor
-dwm.actDWDLbgcolor
-dwm.actSPRLbgcolor
-dwm.actfloatbgcolor
-
-dwm.selTTBbgcolor
-dwm.selLTRbgcolor
-dwm.selMONObgcolor
-dwm.selGRIDbgcolor
-dwm.selGRD1bgcolor
-dwm.selGRD2bgcolor
-dwm.selGRDMbgcolor
-dwm.selHGRDbgcolor
-dwm.selDWDLbgcolor
-dwm.selSPRLbgcolor
-dwm.selfloatbgcolor
+dwm.actTTBbgcolor:
+dwm.actLTRbgcolor:
+dwm.actMONObgcolor:
+dwm.actGRIDbgcolor:
+dwm.actGRD1bgcolor:
+dwm.actGRD2bgcolor:
+dwm.actGRDMbgcolor:
+dwm.actHGRDbgcolor:
+dwm.actDWDLbgcolor:
+dwm.actSPRLbgcolor:
+dwm.actfloatbgcolor:
+                   
+dwm.selTTBbgcolor:
+dwm.selLTRbgcolor:
+dwm.selMONObgcolor:
+dwm.selGRIDbgcolor:
+dwm.selGRD1bgcolor:
+dwm.selGRD2bgcolor:
+dwm.selGRDMbgcolor:
+dwm.selHGRDbgcolor:
+dwm.selDWDLbgcolor:
+dwm.selSPRLbgcolor:
+dwm.selfloatbgcolor:
 ! #endif // BAR_FLEXWINTITLE_PATCH
 
 ! dmenu specific
-!dmenu.font "TerminessTTF Nerd Font Mono:style=Medium"
 dmenu.background: #FBF1C7
 dmenu.foreground: #1D2021
 dmenu.selbackground: #458588

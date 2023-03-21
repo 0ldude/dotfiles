@@ -75,6 +75,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+source $HOME/racket_completion.zsh
 
 export PATH="$HOME/.local/bin:$PATH"
 export SFEED_PLUMBER="lynx"
@@ -102,7 +103,7 @@ export VISUAL="vim"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls="ls -l --human-readable --indicator-style=slash --color=always"
+alias ls="ls -l --color=always"
 alias x="startx"
 alias sfeed_curses="sfeed_curses $HOME/.sfeed/feeds/*"
 alias scrot="scrot -s -l style=solid,width=5,color=#458588,opacity=255,mode=edge"
@@ -110,13 +111,34 @@ alias mv="mv -i"
 alias rm="rm -i"
 alias cp="cp -i"
 alias ip="ip --color=always"
+alias nchat="nchat -d ~/.config/nchat"
 #alias cat="bat --number --theme gruvbox-dark --color always"
 #alias grep="rg --color always --context --context-separator --ignore-case --line-number"
 #Files to source 
-source ~/.pfetchrc
 
 # editing mode (vi/emacs)
 bindkey -v
+
+# pmbootstrap autocomplete
+#autoload bashcompinit
+#bashcompinit
+#eval "$(register-python-argcomplete pmbootstrap)"
+
+# jupyter notebooks 
+init_python3_pipenv () {
+   echo "Setting up pipenv environment"
+   pipenv install --three
+   echo "Installing ipython kernel"
+   pipenv install --dev ipykernel
+   # get name of environment and remove checksum for pretty name
+   venv_name=$(basename -- $(pipenv --venv))
+   venv_prettyname=$(echo $venv_name | cut -d '-' -f 1)
+   echo "Adding ipython kernel to list of jupyter kernels"
+   $(pipenv --py) -m ipykernel install --user --name $venv_name \
+   --display-name "Python3 ($venv_prettyname)"
+}
+
 #fetch
-pfetch
-fortune chucknorris
+export EDITOR="nvim"
+
+afetch
