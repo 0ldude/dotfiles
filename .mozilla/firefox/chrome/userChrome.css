@@ -1,0 +1,43 @@
+.titlebar-color {
+  color: -moz-accent-color-foreground;
+  background-color: -moz-accent-color-background !important;
+}
+
+.tab-background {
+  border-radius: 0px 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.tabbrowser-tab:not([selected="true"]):not([multiselected="true"]) .tab-background {
+  background-color: -moz-accent-color-background !important;
+}
+
+.tabbrowser-tab:not([selected="true"]) > .tab-stack > .tab-background {
+  border-top: 3px solid #282828 !important;
+  border-left: 1px solid #282828 !important;
+  border-right: 1px solid #282828 !important;
+}
+
+
+.tabbrowser-tab[selected="true"] .tab-background {
+  border-top: 3px solid -moz-accent-color !important;
+  background-color: var(--toolbar-bgcolor) !important;
+  background-image: var(--toolbar-bgimage) !important;
+  border-block-start-color: var(--tab-line-color) !important;
+}
+
+:root[uidensity=touch] .toolbar-items, .tabbrowser-tab {
+  max-height: 35px;
+}
+
+.toolbar-items, .tabbrowser-tab {
+  max-height: 35px;
+}
+
+menupopup > menu, menupopup > menuitem {
+  padding-block: 2px !important;
+}
+
+:root {
+  --arrowpanel-menuitem-padding: 2px !important;
+}
