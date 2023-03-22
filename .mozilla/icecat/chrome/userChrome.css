@@ -13,17 +13,19 @@
 }
 
 .tabbrowser-tab:not([selected="true"]) > .tab-stack > .tab-background {
-  border-top: 3px solid #282828 !important;
-  border-left: 1px solid #282828 !important;
-  border-right: 1px solid #282828 !important;
+  border-top: 3px solid -moz-accent-color !important;
+  border-left: 1px solid -moz-accent-color !important;
+  border-right: 1px solid -moz-accent-color !important;
+  border-bottom: 1px solid #458588 !important;
 }
 
 
 .tabbrowser-tab[selected="true"] .tab-background {
-  border-top: 3px solid -moz-accent-color !important;
+  border-top: 3px solid #458588 !important;
+  border-left: 1px solid #458588 !important;
+  border-right: 1px solid #458588 !important;
   background-color: var(--toolbar-bgcolor) !important;
   background-image: var(--toolbar-bgimage) !important;
-  border-block-start-color: var(--tab-line-color) !important;
 }
 
 :root[uidensity=touch] .toolbar-items, .tabbrowser-tab {
