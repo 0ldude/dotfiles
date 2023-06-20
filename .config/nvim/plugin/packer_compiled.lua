@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  ["FTerm.nvim"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/FTerm.nvim",
+    url = "https://github.com/numToStr/FTerm.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -88,6 +93,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
+  },
+  ["arduino-helper.nvim"] = {
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/opt/arduino-helper.nvim",
+    url = "https://github.com/vlelo/arduino-helper.nvim"
   },
   ["auto-save.nvim"] = {
     loaded = true,
@@ -139,6 +151,11 @@ _G.packer_plugins = {
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  conjure = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/conjure",
+    url = "https://github.com/Olical/conjure"
+  },
   ["dressing.nvim"] = {
     loaded = true,
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/dressing.nvim",
@@ -164,6 +181,11 @@ _G.packer_plugins = {
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["hologram.nvim"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/hologram.nvim",
+    url = "https://github.com/edluffy/hologram.nvim"
+  },
   ["icon-picker.nvim"] = {
     loaded = true,
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/icon-picker.nvim",
@@ -174,6 +196,16 @@ _G.packer_plugins = {
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["jupyter_ascending.vim"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/jupyter_ascending.vim",
+    url = "https://github.com/untitled-ai/jupyter_ascending.vim"
+  },
+  ["jupytext.vim"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/jupytext.vim",
+    url = "https://github.com/GCBallesteros/jupytext.vim"
+  },
   ["keymap-amend.nvim"] = {
     loaded = true,
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/keymap-amend.nvim",
@@ -183,6 +215,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["magma-nvim"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/magma-nvim",
+    url = "https://github.com/dccsillag/magma-nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -228,6 +265,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-ipy"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/nvim-ipy",
+    url = "https://github.com/bfredl/nvim-ipy"
   },
   ["nvim-lint"] = {
     loaded = true,
@@ -308,10 +350,37 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/yalo/.local/share/nvim/site/pack/packer/start/true-zen.nvim",
     url = "https://github.com/Pocco81/true-zen.nvim"
+  },
+  ["vim-racket"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/vim-racket",
+    url = "https://github.com/wlangstroth/vim-racket"
+  },
+  ["vim-textobj-hydrogen"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/vim-textobj-hydrogen",
+    url = "https://github.com/GCBallesteros/vim-textobj-hydrogen"
+  },
+  ["vim-textobj-line"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/vim-textobj-line",
+    url = "https://github.com/kana/vim-textobj-line"
+  },
+  ["vim-textobj-user"] = {
+    loaded = true,
+    path = "/home/yalo/.local/share/nvim/site/pack/packer/start/vim-textobj-user",
+    url = "https://github.com/kana/vim-textobj-user"
   }
 }
 
 time([[Defining packer_plugins]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Filetype lazy-loads
+time([[Defining lazy-load filetype autocommands]], true)
+vim.cmd [[au FileType ino ++once lua require("packer.load")({'arduino-helper.nvim'}, { ft = "ino" }, _G.packer_plugins)]]
+time([[Defining lazy-load filetype autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

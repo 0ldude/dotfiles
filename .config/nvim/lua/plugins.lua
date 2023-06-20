@@ -87,6 +87,10 @@ return require('packer').startup(function(use)
         "ellisonleao/gruvbox.nvim",
     }
 
+	use {
+		"ellisonleao/glow.nvim",
+    }
+
     -- recolor background of color codes
     -- to match real color, like #458588
     use {
@@ -183,5 +187,30 @@ return require('packer').startup(function(use)
     use {
         'anuvyklack/fold-preview.nvim',
         requires = 'anuvyklack/keymap-amend.nvim',
+    }
+    use{
+        'numToStr/FTerm.nvim',
+    }
+    use{
+        'vlelo/arduino-helper.nvim',
+        ft = "ino",
+    }
+    use {
+        'edluffy/hologram.nvim',
+    }
+    use {
+        'Olical/conjure',
+        requires = 'wlangstroth/vim-racket',
+    }
+    -- jupyter notebooks setup
+    use {
+        'dccsillag/magma-nvim', run = ':UpdateRemotePlugins',
+        'untitled-ai/jupyter_ascending.vim',
+        'bfredl/nvim-ipy',
+     --   'hkupty/iron.nvim',
+        'GCBallesteros/jupytext.vim',
+        'kana/vim-textobj-line',
+        'kana/vim-textobj-user',
+        'GCBallesteros/vim-textobj-hydrogen',
     }
 end)
