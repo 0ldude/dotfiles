@@ -26,13 +26,13 @@ require('neorg').setup({
             -- this module exposes no customization options
         },
         -- autocompletion framework for neorg
-        ["core.norg.completion"] = {
+        ["core.completion"] = {
             config = {
                 engine = "nvim-cmp",
             }
         },
         -- use icons instead of text for lists and such
-        ["core.norg.concealer"] = {
+        ["core.concealer"] = {
             config = {
                 -- can be "basic", "diamond", "varied"
                 icon_preset = "diamond",
@@ -47,7 +47,7 @@ require('neorg').setup({
         },
 
         -- directory tree for neorg
-        ["core.norg.dirman"] = {
+        ["core.dirman"] = {
             config = {
                 workspaces = {
                     home = "~/Documents/notes/home",
@@ -64,7 +64,7 @@ require('neorg').setup({
                 default_workspace = "home",
             }
         },
-        ["core.norg.journal"] = {
+        ["core.journal"] = {
             config = {
                 workspace = "personal",
                 journal_folder = "journal",
@@ -80,32 +80,32 @@ require('neorg').setup({
                 }
             }
         },
-        ["core.norg.qol.toc"] = {
+        ["core.qol.toc"] = {
             config = {
                 close_split_on_jump = false,
                 toc_split_placement = "left",
             }
         },
         -- get things done framework
-        ["core.gtd.base"] = {
-            config = {
-                workspace = "gtd",
-                -- exclude = ,
-                -- default_lists = ,
-                -- syntax = ,
-                -- displayers = ,
-                custom_tag_completion = false,
-            }
-        },
-        ["core.gtd.ui"] = {
-            -- this module exposes no customization options
-        },
-        ["core.gtd.queries"] = {
-            -- Custom gtd queries, that respect the neorg GTD specs
-            -- (:h neorg-gtd-format)
+        --["core.gtd.base"] = {
+        --    config = {
+        --        workspace = "gtd",
+        --        -- exclude = ,
+        --        -- default_lists = ,
+        --        -- syntax = ,
+        --        -- displayers = ,
+        --        custom_tag_completion = false,
+        --    }
+        --},
+        --["core.gtd.ui"] = {
+        --    -- this module exposes no customization options
+        --},
+        --["core.gtd.queries"] = {
+        --    -- Custom gtd queries, that respect the neorg GTD specs
+        --    -- (:h neorg-gtd-format)
 
-            -- this module exposes no customization options
-        },
+        --    -- this module exposes no customization options
+        --},
         ["core.highlights"] = {
             config = {
                 -- highlights = "",
@@ -116,7 +116,7 @@ require('neorg').setup({
                 -- todo_items_match_color = "",
             }
         },
-        ["core.norg.manoeuvre"] = {
+        ["core.manoeuvre"] = {
             -- this module exposes no customization options
         },
         ["core.presenter"] = {
