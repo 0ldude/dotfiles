@@ -1,5 +1,5 @@
 local hr = tonumber(os.date('%H', os.time()))
-if hr > 7 and hr < 17 then -- day between 7am and 5pm
+if THEME == "light" then
     require("notify.config.highlights").setup{
         NotifyERRORBorder = "#CC241D",
         NotifyWARNBorder = "#D79921",

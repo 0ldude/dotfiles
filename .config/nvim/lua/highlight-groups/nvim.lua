@@ -1,9 +1,9 @@
 local hr = tonumber(os.date('%H', os.time()))
-if hr > 7 and hr < 17 then -- day between 7am and 5pm
+if THEME == "light" then
     vim.opt.background = 'light'
     vim.api.nvim_set_gruvbox_contrast_light = 'hard'
-    vim.api.nvim_set_hl(0, "Normal", { bg = "#1D2021" })
-    vim.api.nvim_set_hl(0, "Normal", { fg = "#FBF1C7" })
+    vim.api.nvim_set_hl(0, "Normal", { bg = "#FBF1C7" })
+    vim.api.nvim_set_hl(0, "Normal", { fg = "#1D2021" })
 
     vim.api.nvim_set_hl(0, "NormalFloat", { bg = "#FBF1C7" })
     vim.api.nvim_set_hl(0, "NormalFloat", { fg = "#1D2021" })
